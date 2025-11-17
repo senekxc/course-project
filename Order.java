@@ -49,11 +49,8 @@ public class Order {
         return base + extras;
     }
 
-    // ======== ГЕТТЕРИ =========
-
     public int getOrderID() { return orderID; }
 
-    // ======== ДОДАНИЙ СЕТТЕР =========
     public void setOrderID(int id) {
         this.orderID = id;
     }

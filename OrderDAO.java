@@ -25,6 +25,6 @@ public class OrderDAO extends BaseDAO {
             if (keys.next()) return keys.getInt(1);
         }
 
-        throw new SQLException("Order insert failed");
+        throw new SQLException("order insert failed");
     }
 }
