@@ -22,8 +22,6 @@ public class Receipt {
         this.generatedAt = LocalDateTime.now();
     }
 
-    // ===== ГЕТТЕРИ =====
-
     public int getReceiptID() { return receiptID; }
 
     public Order getOrder() { return order; }

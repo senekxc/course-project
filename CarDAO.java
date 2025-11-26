@@ -9,12 +9,6 @@ public class CarDAO extends BaseDAO {
 
     public void insert(Car c) throws SQLException {
         String sql = "INSERT INTO Car (plate, carType, color, seats, driverID) VALUES (?, ?, ?, ?, ?)";
-        executeUpdate(sql,
-                c.getPlate(),
-                c.getCarType(),
-                c.getColor(),
-                c.getSeats(),
-                c.getDriverID()
-        );
+        executeUpdate(sql, c.getPlate(), c.getCarType(), c.getColor(), c.getSeats(), c.getDriverID());
     }
 }

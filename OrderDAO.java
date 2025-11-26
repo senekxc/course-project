@@ -7,8 +7,8 @@ public class OrderDAO extends BaseDAO {
     }
 
     public int insert(Order o) throws SQLException {
-        String sql = "INSERT INTO `Order` (clientID, driverID, carID, tariffID, pickup, dropoff, distance) " +
-                "VALUES (?, ?, ?, ?, ?, ?, ?)";
+        String sql =
+                "INSERT INTO `Order` (clientID, driverID, carID, tariffID, pickup, dropoff, distance) VALUES (?, ?, ?, ?, ?, ?, ?)";
 
         try (PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
             ps.setInt(1, o.getClient().getClientID());

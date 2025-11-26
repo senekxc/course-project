@@ -9,11 +9,6 @@ public class DriverDAO extends BaseDAO {
 
     public void insert(Driver d) throws SQLException {
         String sql = "INSERT INTO Driver (name, licenseNo, rating, active) VALUES (?, ?, ?, ?)";
-        executeUpdate(sql,
-                d.getName(),
-                d.getLicenseNo(),
-                d.getRating(),
-                d.isActive()
-        );
+        executeUpdate(sql, d.getName(), d.getLicenseNo(), d.getRating(), d.isActive());
     }
 }

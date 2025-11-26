@@ -9,12 +9,6 @@ public class ServiceDAO extends BaseDAO {
 
     public void insert(Service s) throws SQLException {
         String sql = "INSERT INTO Service (name, description, effectType, effectValue, isPercent) VALUES (?, ?, ?, ?, ?)";
-        executeUpdate(sql,
-                s.getName(),
-                s.getDescription(),
-                s.getEffectType(),
-                s.getEffectValue(),
-                s.isPercent()
-        );
+        executeUpdate(sql, s.getName(), s.getDescription(), s.getEffectType(), s.getEffectValue(), s.isPercent());
     }
 }

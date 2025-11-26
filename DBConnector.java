@@ -5,7 +5,7 @@ import java.sql.SQLException;
 public class DBConnector {
     private static final String URL = "jdbc:mysql://localhost:3306/taxi_service?useSSL=false&serverTimezone=UTC";
     private static final String USER = "root";
-    private static final String PASSWORD = "asdw";
+    private static final String PASSWORD = "fake";
 
     public static Connection connect() throws SQLException {
         return DriverManager.getConnection(URL, USER, PASSWORD);

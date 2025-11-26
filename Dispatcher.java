@@ -22,7 +22,6 @@ public class Dispatcher extends User {
         order.setDriver(driver);
         order.setStatus(Order.OrderStatus.ASSIGNED);
         System.out.println("Dispatcher assigned driver " + driver.getName() + " to order " + order.getOrderID());
-        // update DB
         String sql = "UPDATE `Order` SET driverID = ?, status = ? WHERE orderID = ?";
         try (PreparedStatement ps = conn.prepareStatement(sql)) {
             ps.setInt(1, driver.getUserID());

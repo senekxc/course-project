@@ -17,8 +17,6 @@ public class Service {
         this.isPercent = isPercent;
     }
 
-    // ===== ГЕТТЕРИ =====
-
     public int getServiceID() { return serviceID; }
 
     public String getName() { return name; }
